@@ -4,21 +4,16 @@ class PostController extends Controller
 {
   public function show()    
   {
-  return 'hello world';
+  return view('test', ['var1'=>'1', 'var2'=>'2']);
   }
 }
 ?>
 <?php
-class PostController extends Controller
+class PostConroller extends Controller
 {
-    public function show()
-{
-    $post = [
-        1=> 'текст 1',
-        2=> 'текст 2',
-        3=> 'текст 3',
-        4=> 'текст 4',
-        5=> 'текст 5',
-    ]
+  public function show()
+ {
+  return view('post.show');
+ }
 }
-}
+?>
