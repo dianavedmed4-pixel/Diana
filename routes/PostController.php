@@ -6,12 +6,8 @@ class PostController extends Controller
   {
   return view('test', ['var1'=>'1', 'var2'=>'2']);
   }
-}
-?>
-<?php
-class PostConroller extends Controller
-{
-  public function show()
+
+  public function show1()
  {
   return view('post.show');
  }

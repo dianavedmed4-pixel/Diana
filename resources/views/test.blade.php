@@ -8,12 +8,3 @@
     variable two:{{$var2}}
 </body>
 </html>
-<?php
-	class PostController extends Controller
-	{
-		public function show()
-		{
-			return view('post.show');
-		}
-	}
-?>

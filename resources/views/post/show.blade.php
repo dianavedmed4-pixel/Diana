@@ -1,4 +1,7 @@
 <x-layout>
-<x-slot:title>
-    page title
+    <x-slot:title>
+      {{$title}}
 </x-slot>
+
+    {{$text}}
+</x-layout>
