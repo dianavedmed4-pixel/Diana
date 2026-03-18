@@ -1,12 +1,13 @@
-<?php
-@forelse($arr as $elem)
-<p>{{$elem}}</p>
-@empty
-<p>в массиве нет элементов</p>
-@endforelse
-?>
-<?php
-@foreach($arr as $elem)
-{{$elem}}
-@endforeach
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p style="{{$redColorCss}}">
+ Этот текст будет красного цвета.
+</p> 
+</body>
+</html>
