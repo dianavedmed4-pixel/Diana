@@ -13,3 +13,4 @@ $collection = collect(['first', 'second']);
 $upper = $collection->toUpper();
 
 // ['FIRST', 'SECOND']
+?>
