@@ -14,9 +14,3 @@ $upper = $collection->toUpper();
 
 // ['FIRST', 'SECOND']
 ?>
-<?php
-$collection = collect(['name' => 'taylor', 'framework' => 'laravel']);
-
-$value = $collection->get('name');
-
-// taylor
