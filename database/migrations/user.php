@@ -4,9 +4,12 @@ class CreatePostTable extends Migration
 {
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table){
+        Schema::create('cache', function (Blueprint $table) {
+            $table->string('key')->primary();
+            $table->mediumText('value');
+            $table->integer('expiration')->index();
 
-        })
+        });
     }
 public function down()
 {
