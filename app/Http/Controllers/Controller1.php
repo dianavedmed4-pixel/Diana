@@ -1,6 +1,6 @@
 <?php
 	namespace App\Http\Controllers;
-	use Illuminate\Support\Facades\DB; // подключаем фасад DB
+	use Illuminate\Support\Facades\DB; 
 	
 	class PostController extends Controller
 	{
