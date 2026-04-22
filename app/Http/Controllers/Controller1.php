@@ -1,14 +1,13 @@
 <?php
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Lang;
-
-Collection::macro('toLocale', function ($locale) {
-    return $this->map(function ($value) use ($locale) {
-        return Lang::get($value, [], $locale);
-    });
-});
-
-$collection = collect(['first', 'second']);
-
-$translated = $collection->toLocale('es');
+	namespace App\Http\Controllers;
+	use Illuminate\Support\Facades\DB; // подключаем фасад DB
+	
+	class PostController extends Controller
+	{
+		public function show()
+		{
+			$posts=DB::table('posts')->get();
+            dump($posts);
+		}
+	}
 ?>
